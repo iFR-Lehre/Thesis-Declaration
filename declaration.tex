@@ -4,7 +4,6 @@
             BCOR=5mm, % binding correction
             twoside,
             openright,
-            bibliography=totoc % include bibliography in table of contents
             ]{scrbook}
 
 \usepackage[ngerman]{babel} 
@@ -15,9 +14,9 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 
-\input{declaration_command.tex}
+\usepackage{./declaration_command}
 
 \begin{document}
-\makedeclaration{DURCH NAMEN ERSETZEN}
+\makedeclarationwithauthor{DURCH NAMEN ERSETZEN}
 \thispagestyle{empty}
 \end{document}
